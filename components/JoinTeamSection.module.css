@@ -1,0 +1,87 @@
+.section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 80px 40px;
+  width: 100%;
+  background: #00ffba;
+  margin: 0;
+}
+
+.subtitle {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 145%;
+  text-align: center;
+  color: #ffffff;
+  margin-bottom: 16px;
+}
+
+.title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 45px;
+  line-height: 110%;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-bottom: 40px;
+}
+
+.button {
+  display: inline-flex;
+  padding: 16px 32px;
+  background: #000000;
+  color: #ffffff;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 145%;
+  text-align: center;
+  text-transform: uppercase;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background: #333333;
+}
+
+/* Media Queries για responsive design */
+@media (max-width: 1279px) {
+  .section {
+    padding: 60px 30px;
+  }
+
+  .title {
+    font-size: 38px;
+  }
+
+  .button {
+    padding: 14px 28px;
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 799px) {
+  .section {
+    padding: 50px 20px;
+  }
+
+  .subtitle {
+    font-size: 16px;
+  }
+
+  .title {
+    font-size: 32px;
+    margin-bottom: 30px;
+  }
+
+  .button {
+    padding: 12px 24px;
+    font-size: 16px;
+  }
+}

@@ -1,0 +1,102 @@
+.header {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 64px;
+  gap: 120px;
+  width: 100%;
+  height: 124px;
+  margin: 0;
+}
+
+.icon {
+  width: 41px;
+  height: 41px;
+}
+
+.iconContainer {
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.nav {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 32px;
+}
+
+.homeLink {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 145%;
+  display: flex;
+  align-items: center;
+  letter-spacing: -0.005em;
+  color: #25273e;
+  text-decoration: none;
+}
+
+.link {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 145%;
+  display: flex;
+  align-items: center;
+  letter-spacing: -0.005em;
+  color: #aca097;
+  text-decoration: none;
+}
+
+.loginContainer {
+  flex: none;
+  order: 3;
+  flex-grow: 0;
+}
+
+/* Media Queries για responsive design */
+@media (max-width: 1279px) {
+  .header {
+    height: 130px;
+    padding: 64px 32px;
+    gap: 96px;
+  }
+
+  .nav {
+    gap: 24px;
+  }
+}
+
+@media (max-width: 799px) {
+  .header {
+    height: 280px;
+    padding: 64px 24px;
+    gap: 56px;
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .nav {
+    flex-direction: column;
+    gap: 16px;
+    height: 140px;
+  }
+
+  /* Αλλαγή στην σειρά εμφάνισης των στοιχείων */
+  .iconContainer {
+    order: 2;
+  }
+
+  .nav {
+    order: 0;
+  }
+
+  .loginContainer {
+    order: 1;
+  }
+}

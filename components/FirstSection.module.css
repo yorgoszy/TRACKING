@@ -1,0 +1,162 @@
+.section {
+  display: flex;
+  width: 100%;
+  height: 60vh;
+  min-height: 350px;
+}
+
+.imageContainer {
+  flex: 1;
+  position: relative;
+}
+
+.textContainer {
+  width: 40%;
+  background-color: #aca097;
+  padding: 40px 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.title {
+  font-family: "Helvetica Neue", sans-serif;
+  font-size: 42px; /* Ελαφρώς αυξημένο για καλύτερη εμφάνιση σε 2 σειρές */
+  font-weight: 700;
+  line-height: 1.05; /* Ελαφρώς αυξημένο για καλύτερα κενά μεταξύ των 2 σειρών */
+  color: #25273e;
+  margin-bottom: 25px; /* Ελαφρώς αυξημένο για καλύτερη ισορροπία */
+  text-transform: uppercase;
+  letter-spacing: -0.02em;
+}
+
+.boxContainer {
+  padding: 15px 20px 15px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.description {
+  font-family: "Helvetica Neue", sans-serif;
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 1.1;
+  color: transparent;
+  -webkit-text-stroke: 1.5px #25273e;
+  text-stroke: 1.5px #25273e;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 0.01em;
+  filter: blur(3px);
+  transition: filter 0.3s ease;
+}
+
+.description:hover {
+  filter: blur(0);
+}
+
+.processButton {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 15px;
+  gap: 7px;
+
+  width: auto;
+  min-width: 180px;
+  height: 38px;
+
+  background: #aca097;
+  border: 1px solid #25273e;
+  border-radius: 7px;
+
+  font-family: "Fugaz One", sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  color: #25273e;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.processButton:hover {
+  background-color: #00ffba;
+  color: #25273e;
+}
+
+/* Media Queries για responsive design */
+@media (max-width: 1024px) {
+  .section {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .imageContainer {
+    height: 40vh;
+  }
+
+  .textContainer {
+    width: 100%;
+    padding: 25px 20px;
+  }
+
+  .title {
+    font-size: 34px; /* Ελαφρώς αυξημένο για καλύτερη εμφάνιση σε 2 σειρές */
+    margin-bottom: 15px;
+  }
+
+  .description {
+    font-size: 24px;
+    -webkit-text-stroke: 1.2px #25273e;
+    text-stroke: 1.2px #25273e;
+    margin-bottom: 15px;
+  }
+}
+
+@media (max-width: 799px) {
+  .section {
+    height: 400px;
+    flex-direction: column;
+  }
+
+  .imageContainer {
+    width: 100%;
+    height: 200px;
+  }
+
+  .textContainer {
+    width: 100%;
+    height: 200px;
+    padding: 15px;
+  }
+
+  .title {
+    font-size: 26px; /* Ελαφρώς αυξημένο για καλύτερη εμφάνιση σε 2 σειρές */
+    margin-bottom: 10px;
+  }
+
+  .description {
+    font-size: 14px;
+    -webkit-text-stroke: 1px #25273e;
+    text-stroke: 1px #25273e;
+    margin-bottom: 10px;
+    line-height: 1;
+  }
+
+  .boxContainer {
+    padding: 10px 10px 10px 0;
+  }
+
+  .processButton {
+    height: 34px;
+    font-size: 12px;
+    padding: 8px 12px;
+  }
+}

@@ -1,0 +1,112 @@
+.footer {
+  width: 100%;
+  background: #f5f5f5;
+  padding: 80px 60px 40px;
+  margin: 0;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+}
+
+.columnRight {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+}
+
+.title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 145%;
+  text-transform: uppercase;
+  color: #25273e;
+  margin-bottom: 24px;
+}
+
+.text {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 160%;
+  color: #25273e;
+  margin-bottom: 12px;
+}
+
+.copyright {
+  margin-top: 60px;
+  padding-top: 20px;
+  border-top: 1px solid #e0e0e0;
+  text-align: center;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 145%;
+  color: #666666;
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.icon {
+  width: 41px;
+  height: 41px;
+}
+
+/* Media Queries για responsive design */
+@media (max-width: 1279px) {
+  .footer {
+    padding: 60px 40px 30px;
+  }
+
+  .container {
+    gap: 30px;
+  }
+
+  .title {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+
+  .text {
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+
+  .copyright {
+    margin-top: 40px;
+    padding-top: 16px;
+  }
+}
+
+@media (max-width: 799px) {
+  .footer {
+    padding: 40px 20px 20px;
+  }
+
+  .container {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .columnRight {
+    justify-content: flex-start;
+    margin-top: 20px;
+  }
+
+  .copyright {
+    margin-top: 30px;
+    padding-top: 14px;
+    font-size: 12px;
+  }
+}
